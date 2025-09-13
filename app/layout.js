@@ -17,10 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${outfit.className} antialiased bg-neutral-950 text-white`}
+        className={`${outfit.className} antialiased bg-stone-100 text-black`}
       >
         <Navbar />
-        {children}
+        <div className="p-4">{children}</div>
         <Footer />
       </body>
     </html>
