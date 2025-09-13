@@ -15,7 +15,10 @@ const Navbar = () => {
     return (
         <header className='sticky bg-white top-0 backdrop-blur-sm z-50'>
             <div className='container mx-auto flex items-center justify-between py-4 px-4 md:px-0'>
-                <Logo />
+
+                <div className="logoDesktop hidden md:flex">
+                    <Logo />
+                </div>
 
                 <div className='hidden md:flex'>
                     <Menu />
@@ -30,6 +33,14 @@ const Navbar = () => {
                     <button onClick={toggleMenu} aria-label="Toggle menu">
                         {isMenuOpen ? <X size={24} /> : <MenuIcon size={24} />}
                     </button>
+                </div>
+
+                <div className="mobLogo flex md:hidden">
+                    <Logo />
+                </div>
+
+                <div className='flex md:hidden gap-3 items-center'>
+                    <Link href={'/'}><User /></Link>
                 </div>
             </div>
 
