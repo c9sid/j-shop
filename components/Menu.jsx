@@ -1,17 +1,15 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
+import React from 'react';
 
 const Menu = () => {
     return (
-        <nav className='hidden md:flex'>
-            <div>
-                <ul className='flex gap-5'>
-                    <li><Link href={'/'}>Home</Link></li>
-                    <li><Link href={'/products'}>Products</Link></li>
-                </ul>
-            </div>
+        <nav>
+            <ul className='flex flex-col md:flex-row items-center gap-5'>
+                <li><Link href={'/'}>Home</Link></li>
+                <li><Link href={'/products'}>Products</Link></li>
+            </ul>
         </nav>
-    )
-}
+    );
+};
 
-export default Menu
+export default Menu;
