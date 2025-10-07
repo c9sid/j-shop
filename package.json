@@ -9,12 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.33.3",
     "axios": "^1.12.2",
     "lucide-react": "^0.542.0",
     "mongodb": "^6.19.0",
     "mongoose": "^8.18.1",
     "motion": "^12.23.12",
     "next": "15.5.2",
+    "next-cloudinary": "^6.16.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
